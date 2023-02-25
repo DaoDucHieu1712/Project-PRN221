@@ -16,4 +16,12 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Home\" />
+    <Folder Include="Pages\Cart\" />
+    <Folder Include="Pages\Dashboard\" />
+    <Folder Include="Pages\Order\" />
+    <Folder Include="Pages\Product\" />
+  </ItemGroup>
+
 </Project>

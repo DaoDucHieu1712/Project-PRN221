@@ -1,0 +1,114 @@
+.home {
+    margin: 50px 0;
+}
+
+.home-heading {
+    font-weight: 600;
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+
+
+/* FEATURE */
+.feature {
+    margin: 100px 0;
+}
+
+.feature-item {
+    padding: 15px;
+    border: 1px solid #1e2021;
+    border-radius: 8px;
+}
+
+.feature-heading {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.feature-desc p {
+    font-size: 15px;
+    color: #333;
+}
+
+/* SET */
+.home-set {
+    background-color: #F5F5F5;
+    padding: 120px 20px;
+}
+
+/* PRODUCT */
+
+.product {
+    margin: 100px 0;
+}
+
+.product-item {
+    padding: 25px;
+    border: 1px solid transparent;
+    transition: .25s linear;
+}
+
+.product-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.product-img {
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.product-img img {
+    transition: .25s linear;
+}
+
+.product-img img:hover {
+    transform: scale(1.1)
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    color: red;
+}
+
+.product-add {
+    padding: 10px;
+    background-color: #1e2021;
+}
+
+.product-name {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.product-add:hover {
+    opacity: 0.85;
+}
+
+.product-add a {
+    color: white;
+}
+
+.product-more {
+    margin-top: 75px;
+    text-align: center;
+    color: white;
+    transition: .25s linear;
+    opacity: 0.8;
+}
+
+.product-more:hover {
+    opacity: 1;
+}
+
+
+
+.product-more a {
+    padding: 15px 75px;
+    background-color: #1e2021;
+    color: white
+}
