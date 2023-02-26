@@ -1,0 +1,17 @@
+﻿@page
+@model Shop_Online.Pages.Home.IndexModel
+@{
+    var product = Model.product;
+}
+
+@if(product == null)
+{
+    <span>Khong tim thay</span>
+}
+else
+{
+    <p>@product.Id</p>
+    <p>@product.Name</p>
+    <p>@product.Price</p>
+
+}
