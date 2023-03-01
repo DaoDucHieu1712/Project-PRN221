@@ -1,0 +1,45 @@
+﻿@page
+@model Shop_Online.Pages.Product.CreateModel
+@{
+    Layout = null;
+}
+<div class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <span class="modal-close">
+            X
+        </span>
+        <div class="modal-main">
+            <h1 class="form-heading">Add new product</h1>
+            <form action="#" class="form-submit">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Image</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Desciption</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Price</label>
+                    <input type="number" min="0">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select name="" id="">
+                        <option value="">ABC</option>
+                        <option value="">XYZ</option>
+                        <option value="">QWER</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <Button>Save</Button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

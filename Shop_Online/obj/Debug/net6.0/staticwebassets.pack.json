@@ -5,8 +5,76 @@
       "PackagePath": "staticwebassets\\Shop_Online.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\js\\index.scss",
-      "PackagePath": "staticwebassets\\js\\index.scss"
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\assets\\banner.png",
+      "PackagePath": "staticwebassets\\assets\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\assets\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\assets\\set1.png",
+      "PackagePath": "staticwebassets\\assets\\set1.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\assets\\set2.png",
+      "PackagePath": "staticwebassets\\assets\\set2.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\assets\\set3.jpg",
+      "PackagePath": "staticwebassets\\assets\\set3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\assets\\store_banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\store_banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\grid-system.css",
+      "PackagePath": "staticwebassets\\css\\grid-system.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\header.css",
+      "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\product.css",
+      "PackagePath": "staticwebassets\\css\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\product_list.css",
+      "PackagePath": "staticwebassets\\css\\product_list.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\js\\layout.js",
+      "PackagePath": "staticwebassets\\js\\layout.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\js\\product_list.js",
+      "PackagePath": "staticwebassets\\js\\product_list.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Shop_Online.Microsoft.AspNetCore.StaticWebAssets.props",

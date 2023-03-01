@@ -1,0 +1,141 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px 30px;
+    text-align: left;
+}
+
+table thead {
+    background-color: #f1f7fd;
+}
+
+table th {
+    color: #1e2021;
+    font-weight: 600;
+    background-color: #f1f7fd;
+}
+
+table tbody tr {
+    border-top: 1px solid #f0f4f8;
+}
+
+.cart-table img {
+    width: 130px;
+}
+
+.cart {
+    margin-top: 32px;
+}
+
+.cart-heading {
+    margin: 36px 0;
+}
+
+.cart-heading h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.increment, .descrement {
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: .25s linear;
+}
+
+
+
+.product-quantiy span:hover {
+    background-color: #1e2021;
+    color: #fff;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.checkout {
+    padding: 15px;
+    background-color: #f1f7fd;
+}
+
+.quantity {
+    border: none;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.total-caption p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.total-price span {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.checkout-btn a {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #4575D8;
+    color: white;
+    border-radius: 4px;
+
+}
+
+.checkout-btn button {
+    border: none;
+    width: 100%;
+    padding: 12px;
+    background-color: #4575D8;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+
+}
+
+.checkout-btn button:hover {
+    opacity: 0.85;
+
+}
+
+.checkout-btn a:hover {
+    opacity: 0.85;
+}

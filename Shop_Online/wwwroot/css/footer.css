@@ -1,0 +1,34 @@
+.footer {
+    margin-top: 50px;
+    padding: 60px;
+    background-color: #1e2021;
+    color: white;
+}
+
+.footer-wrapper:last-child {
+    align-items: flex-end;
+}
+
+.footer-header {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-heading h1 {
+    font-weight: 500;
+}
+
+.footer-location__list {
+    margin: 15px 0;
+}
+
+.footer-location p {
+    margin: 10px 0;
+}
+
+.footer-support__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}

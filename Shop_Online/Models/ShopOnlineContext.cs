@@ -27,7 +27,7 @@ namespace Shop_Online.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                var config = new ConfigurationBuilder().AddJsonFile("appsetting.json").Build();
+                var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
                 optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
             }
         }

@@ -6,6 +6,15 @@
     margin-bottom: 50px;
 }
 
+.header.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: fade 0.25s forwards 1;
+}
+
 .header-wrapper {
     display: flex;
     justify-content: center;
@@ -75,4 +84,14 @@
 
 .div {
     height: 1000px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

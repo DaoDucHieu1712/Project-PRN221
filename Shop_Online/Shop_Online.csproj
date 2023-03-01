@@ -19,8 +19,12 @@
   <ItemGroup>
     <Folder Include="Pages\Cart\" />
     <Folder Include="Pages\Dashboard\" />
-    <Folder Include="Pages\Order\" />
-    <Folder Include="Pages\Product\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -1,35 +1,52 @@
-﻿using Shop_Online.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Shop_Online.Models;
 using System.Linq;
 
 namespace Shop_Online.Services
 {
     public class ProductService
     {
-        private readonly IDatabase _database;
+        private readonly ShopOnlineContext _db = new ShopOnlineContext();
 
-        public ProductService(IDatabase database)
+        public ProductService()
         {
-            _database = database;
+
+        }
+        public ProductService(ShopOnlineContext db)
+        {
+            _db = db;
         }
 
-        public Product GetUserById(int id)
+
+        public List<Product> GetProducts()
         {
-            return _database.GetById<Product>(id);
+            return _db.Products.ToList();
         }
 
-        public void AddUser(Product product)
+        public List<Product> getListProductById(int id)
         {
-            _database.Add(product);
+            return _db.Products.Where(x => x.Cid == id).ToList();
         }
 
-        public void UpdateUser(Product product)
+        public List<Product> getProductsWithHome(int id)
         {
-            _database.Update(product);
+            return _db.Products.Where(x => x.Cid == id).Take(4).ToList();
         }
 
-        public void DeleteUser(Product product)
+        public void create()
         {
-            _database.Delete(product);
+
         }
+
+        public void update()
+        {
+
+        }
+
+        public void delete()
+        {
+
+        }
+
     }
 }

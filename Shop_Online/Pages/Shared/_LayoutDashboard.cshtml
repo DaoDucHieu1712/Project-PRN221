@@ -1,10 +1,73 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout dashboard</title>
+    <link rel="stylesheet" href="~/css/reset.css">
+    <link rel="stylesheet" href="~/css/index.css">
+    <link rel="stylesheet" href="~/css/grid-system.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <link rel="stylesheet" href="~/css/dashboard.css">
+    <link rel=" stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="row">
+            <div class="col pc-2">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <img src="~/assets/logo.png" alt="">
+                    </div>
+                    <div class="sidebar-list">
+                        <a href="#">
+                            <div class="sidebar-item">
+                                <i class="fas fa-home"></i>
+                                <p> Dashboard</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="sidebar-item">
+                                <i class="fas fa-user"></i>
+                                <p href="#">User</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="sidebar-item">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Product</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="sidebar-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Order</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="sidebar-item">
+                                <i class="fas fa-cog"></i>
+                                <p>Setting</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="sidebar-item">
+                                <i class="fas fa-sign-out"></i>
+                                <p>Logout</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col pc-10">
+                    <div class="content">
+                        @RenderBody()
+                    </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>

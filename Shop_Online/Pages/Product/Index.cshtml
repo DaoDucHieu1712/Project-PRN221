@@ -1,0 +1,103 @@
+﻿@page
+@model Shop_Online.Pages.Product.IndexModel
+@{
+    Layout = "_LayoutDashboard";
+}
+<link rel="stylesheet" href="~/css/product.css">
+
+<div class="product">
+    <div class="product-heading">
+        <h3>PRODUCT MANAGEMENT</h3>
+    </div>
+    <div class="product-create">
+        <span class="create">Add new product</span>
+    </div>
+    <div class="product-filter">
+        <div class="product-search">
+            <input type="text">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+    <div class="product-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="https://product.hstatic.net/1000281824/product/347_d9c2da1b00e44e7b8fa0c2fc8b04db06_large.jpg"
+                             alt="" class="product-image">
+                    </td>
+                    <td>Tee Test</td>
+                    <td>
+                        120000 $
+                    </td>
+                    <td>Clothes</td>
+                    <td class="product-action">
+                        <span class="update" data-value-id="1"><i class="fas fa-edit"></i></span>
+                        <span class="delete" data-value-id="1"><i class="fas fa-trash-alt"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="https://product.hstatic.net/1000281824/product/347_d9c2da1b00e44e7b8fa0c2fc8b04db06_large.jpg"
+                             alt="" class="product-image">
+                    </td>
+                    <td>Tee Test</td>
+                    <td>
+                        120000 $
+                    </td>
+                    <td>Clothes</td>
+                    <td class="product-action">
+                        <span class="update" data-value-id="1"><i class="fas fa-edit"></i></span>
+                        <span class="delete" data-value-id="1"><i class="fas fa-trash-alt"></i></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="pagination" id="pagger">
+    <div class="pagination-item">
+        <a href="#" class="pagination-link"><i class="far fa-angle-left"></i></a>
+    </div>
+    <div class="pagination-item">
+        <a href="#" class="pagination-link">1</a>
+    </div>
+    <div class="pagination-item">
+        <a href="#" class="pagination-link">2</a>
+    </div>
+    <div class="pagination-item">
+        <a href="#" class="pagination-link">3</a>
+    </div>
+    <div class="pagination-item">
+        <a href="#" class="pagination-link">4</a>
+    </div>
+    <div class="pagination-item">
+        <a href="#" class="pagination-link">5</a>
+    </div>
+    <div class="pagination-index">
+        <span href="#" class="pagination-span">...</span>
+    </div>
+    <div class="pagination-item">
+        <a href="#" class="pagination-link">6</a>
+    </div>
+    <div class="pagination-item">
+        <a href="#" class="pagination-link">7</a>
+    </div>
+    <div class="pagination-item">
+        <a href="#" class="pagination-link"><i class="fas fa-angle-right"></i></a>
+    </div>
+</div>
+<script src="~/js/product_list.js"></script>
