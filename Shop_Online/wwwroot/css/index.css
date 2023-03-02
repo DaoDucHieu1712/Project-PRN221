@@ -68,3 +68,7 @@ a {
     width: 25px;
     height: 25px;
 }
+
+.header-cart__quantity{
+    cursor: pointer
+}

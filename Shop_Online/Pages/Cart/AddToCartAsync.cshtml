@@ -1,0 +1,14 @@
+﻿@page
+@model Shop_Online.Pages.Cart.AddToCartAsyncModel
+@using Microsoft.AspNetCore.Http
+@using System.Text.Json
+@{
+    var cartJson = HttpContext.Session.GetString("cart");
+    var cart = JsonSerializer.Deserialize<IDictionary<int, int>>(cartJson);
+    int quantity = cart.Count;
+}
+@{
+    Layout = null;
+}
+
+@quantity

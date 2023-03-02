@@ -33,6 +33,10 @@ namespace Shop_Online.Services
             return _db.Products.Where(x => x.Cid == id).Take(4).ToList();
         }
 
+        public Product GetProductById(int id)
+        {
+            return _db.Products.Where(x => x.Id == id).FirstOrDefault();
+        }
         public void create()
         {
 

@@ -28,5 +28,5 @@ window.addEventListener(
             header && header.classList.remove("is-fixed");
             document.body.style.paddingTop = 0;
         }
-    }, 50)
+    }, 100)
 );

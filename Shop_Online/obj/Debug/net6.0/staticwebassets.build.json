@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y7Ol4EOBS5jZOCwBCikjMct3561R3ZpYmM7fIHnwYdY=",
+  "Hash": "jekRiQl6jQoKPI8tcyHbUEqrvftcZ5JHGwJNHjzLpMk=",
   "Source": "Shop_Online",
   "BasePath": "_content/Shop_Online",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\store_banner.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\cart.css",
+      "SourceId": "Shop_Online",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\",
+      "BasePath": "_content/Shop_Online",
+      "RelativePath": "css/cart.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cart.css"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\dashboard.css",

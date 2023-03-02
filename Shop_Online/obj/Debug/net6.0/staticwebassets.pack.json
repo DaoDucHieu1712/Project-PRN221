@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\assets\\store_banner.jpg"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\wwwroot\\css\\dashboard.css",
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },

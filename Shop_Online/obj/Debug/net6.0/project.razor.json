@@ -18374,6 +18374,11 @@
   "RootNamespace": "Shop_Online",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\Pages\\Cart\\AddToCartAsync.cshtml",
+      "TargetPath": "Pages\\Cart\\AddToCartAsync.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\Pages\\Product\\Delete.cshtml",
       "TargetPath": "Pages\\Product\\Delete.cshtml",
       "FileKind": "mvc"
@@ -18414,6 +18419,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\Pages\\Cart\\MyCart.cshtml",
+      "TargetPath": "Pages\\Cart\\MyCart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\Pages\\Order\\Index.cshtml",
       "TargetPath": "Pages\\Order\\Index.cshtml",
       "FileKind": "mvc"
@@ -18426,11 +18436,6 @@
     {
       "FilePath": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\Pages\\User\\Index.cshtml",
       "TargetPath": "Pages\\User\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\FPT\\Spring2023\\PRN221\\Project\\Project-PRN221\\Shop_Online\\Pages\\Home\\Index.cshtml",
-      "TargetPath": "Pages\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

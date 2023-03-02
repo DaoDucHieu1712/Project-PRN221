@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@using System.Text.Json
+@{
+    var cartJson = Context.Session.GetString("cart");
+    var cart = JsonSerializer.Deserialize<IDictionary<int, int>>(cartJson);
+    int soluong = cart.Count;
+}
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -21,7 +30,7 @@
             <div class="row header-wrapper">
                 <div class="col pc-4">
                     <div class="header-logo">
-                        <a href="#home">
+                        <a href="/">
                             <img src="~/assets/logo.png" alt="logo">
                         </a>
                     </div>
@@ -29,7 +38,7 @@
                 <div class="col pc-4">
                     <div class="header-list">
                         <div class="header-item">
-                            <a href="#home">Home</a>
+                            <a href="/">Home</a>
                         </div>
                         <div class="header-item">
                             <a href="#product">Product</a>
@@ -44,11 +53,11 @@
                 </div>
                 <div class="col pc-4">
                     <div class="header-icon__list">
-                        <a href="#cart">
-                            <i class="fas fa-shopping-cart" class="header-cart"></i>
-                            <div class="header-cart__quantity">1</div>
+                        <a href="/Cart/MyCart">
+                            <i class="fas fa-shopping-cart header-cart"></i>
+                            <p class="header-cart__quantity">@soluong</p>
                         </a>
-                        <a href="#login">
+                        <a href="Login">
                             <i class="fas fa-user"></i>
                         </a>
                     </div>

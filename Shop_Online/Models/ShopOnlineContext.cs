@@ -27,8 +27,8 @@ namespace Shop_Online.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-                optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("server =localhost; database=ShopOnline;uid=sa;pwd=sa;");
             }
         }
 
@@ -42,9 +42,7 @@ namespace Shop_Online.Models
 
                 entity.Property(e => e.Oid).HasColumnName("oid");
 
-                entity.Property(e => e.TotalPrice)
-                    .HasColumnType("money")
-                    .HasColumnName("total_price");
+                entity.Property(e => e.TotalPrice).HasColumnName("total_price");
 
                 entity.Property(e => e.Uid).HasColumnName("uid");
 
@@ -101,9 +99,7 @@ namespace Shop_Online.Models
 
                 entity.Property(e => e.Name).HasColumnName("name");
 
-                entity.Property(e => e.Price)
-                    .HasColumnType("money")
-                    .HasColumnName("price");
+                entity.Property(e => e.Price).HasColumnName("price");
 
                 entity.HasOne(d => d.CidNavigation)
                     .WithMany(p => p.Products)

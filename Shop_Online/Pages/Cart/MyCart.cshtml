@@ -1,0 +1,102 @@
+﻿@page
+@model Shop_Online.Pages.Cart.MyCartModel
+@{
+    int total_price = Model.total_Price;
+    var cart = Model.cart;
+}
+
+<link rel="stylesheet" href="~/css/cart.css">
+
+<div class="grid-container wide">
+    <div class="banner">
+        <div class="banner-img">
+            <img src="~/assets/store_banner.jpg" height="200px" width="100%" alt="">
+        </div>
+    </div>
+    <div class="cart">
+        <div class="cart-heading">
+            <h1>My Cart</h1>
+        </div>
+        <div class="row">
+            <div class="col pc-8">
+                @if(cart.Count == 0)
+                {
+                    <h1>No item added to cart !!!</h1>
+                }
+                else
+                {
+                <div class="cart-table">
+                    <div class="product-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var item in cart)
+                                {
+                                    var sp = new Models.Product();
+                                    using(var _db = new Models.ShopOnlineContext())
+                                    {
+                                        sp = _db.Products.Where(x => x.Id == item.Key).FirstOrDefault();
+                                    }
+                                <tr>
+                                    <td>
+                                        <img src="@sp.Image"
+                                             alt="" class="product-image">
+                                    </td>
+                                    <td>@sp.Name</td>
+                                    <td>
+                                        @sp.Price $
+                                    </td>
+                                    <td class="product-quantiy">
+                                        <a class="descrement" href="/Cart/MyCart?handler=Decrement&id=@item.Key">-</a>
+                                        <span class="quantity">@item.Value</span>
+                                        <a class="increment" href="/Cart/MyCart?handler=Increment&id=@item.Key">+</a>
+                                    </td>
+                                    <td class="product-delete">
+                                        <a class="delete" href="/Cart/MyCart?handler=Remove&id=@item.Key">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                }
+            </div>
+            <div class="col pc-4">
+                <div class="checkout">
+                    <div class="total">
+                        <div class="total-caption">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="total-price">
+                            <span>$ @total_price </span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h1>Information about shipping</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et rem ab ipsum provident nihil
+                            laudantium natus in quam laborum, reiciendis, voluptate numquam vitae doloremque ut
+                            cumque est, vel quasi blanditiis.
+                        </p>
+                    </div>
+                    <div class="checkout-btn">
+                        <a href="/">Continue Shopping</a>
+                        <button href="#">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
