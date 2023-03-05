@@ -8,8 +8,7 @@ namespace Shop_Online.Pages.Home
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-        public readonly ProductService productService = new ProductService();
+        public ProductService productService = new ProductService();
 
         public void OnGet()
         {

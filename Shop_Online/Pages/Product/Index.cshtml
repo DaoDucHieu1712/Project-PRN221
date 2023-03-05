@@ -2,6 +2,9 @@
 @model Shop_Online.Pages.Product.IndexModel
 @{
     Layout = "_LayoutDashboard";
+    var products = Model.products;
+    var filter = Model.filter;
+    var total_page = Model.total_page;
 }
 <link rel="stylesheet" href="~/css/product.css">
 
@@ -13,10 +16,12 @@
         <span class="create">Add new product</span>
     </div>
     <div class="product-filter">
+     <form action="/Product/Index" method="get">
         <div class="product-search">
-            <input type="text">
+            <input type="text" name="search_name" value="@filter.search_name">
             <i class="fas fa-search"></i>
         </div>
+     </form>
     </div>
     <div class="product-table">
         <table>
@@ -31,73 +36,62 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach (var item in products)
+                {
                 <tr>
-                    <td>1</td>
+                    <td>@item.Id</td>
                     <td>
-                        <img src="https://product.hstatic.net/1000281824/product/347_d9c2da1b00e44e7b8fa0c2fc8b04db06_large.jpg"
+                        <img src="@item.Image"
                              alt="" class="product-image">
                     </td>
-                    <td>Tee Test</td>
+                    <td>@item.Name</td>
                     <td>
-                        120000 $
+                        @item.Price $
                     </td>
-                    <td>Clothes</td>
+                    <td>@item.CidNavigation.Name</td>
                     <td class="product-action">
-                        <span class="update" data-value-id="1"><i class="fas fa-edit"></i></span>
-                        <span class="delete" data-value-id="1"><i class="fas fa-trash-alt"></i></span>
+                        <span class="update" data-value-id="@item.Id"><i class="fas fa-edit"></i></span>
+                        <span class="delete" data-value-id="@item.Id"><i class="fas fa-trash-alt"></i></span>
                     </td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <img src="https://product.hstatic.net/1000281824/product/347_d9c2da1b00e44e7b8fa0c2fc8b04db06_large.jpg"
-                             alt="" class="product-image">
-                    </td>
-                    <td>Tee Test</td>
-                    <td>
-                        120000 $
-                    </td>
-                    <td>Clothes</td>
-                    <td class="product-action">
-                        <span class="update" data-value-id="1"><i class="fas fa-edit"></i></span>
-                        <span class="delete" data-value-id="1"><i class="fas fa-trash-alt"></i></span>
-                    </td>
-                </tr>
+                }
             </tbody>
         </table>
     </div>
 </div>
 
+@if(total_page != 1)
+{
 <div class="pagination" id="pagger">
+
     <div class="pagination-item">
-        <a href="#" class="pagination-link"><i class="far fa-angle-left"></i></a>
+           <a class="pagination-link"
+           asp-page="/Product/Index"
+           asp-route-pageIndex="@(filter.pageIndex - 1)"
+           asp-route-search_name="@filter.search_name">
+              <i class="far fa-angle-left"></i>
+            </a>
     </div>
+    @for (int i = 1; i < total_page; i++)
+        {
     <div class="pagination-item">
-        <a href="#" class="pagination-link">1</a>
+          <a class="pagination-link @(filter.pageIndex == i ? "isActive" : "")"
+           asp-page="/Product/Index"
+           asp-route-pageIndex="@i"
+           asp-route-search_name="@filter.search_name">
+           @i
+        </a>
     </div>
+        }
     <div class="pagination-item">
-        <a href="#" class="pagination-link">2</a>
-    </div>
-    <div class="pagination-item">
-        <a href="#" class="pagination-link">3</a>
-    </div>
-    <div class="pagination-item">
-        <a href="#" class="pagination-link">4</a>
-    </div>
-    <div class="pagination-item">
-        <a href="#" class="pagination-link">5</a>
-    </div>
-    <div class="pagination-index">
-        <span href="#" class="pagination-span">...</span>
-    </div>
-    <div class="pagination-item">
-        <a href="#" class="pagination-link">6</a>
-    </div>
-    <div class="pagination-item">
-        <a href="#" class="pagination-link">7</a>
-    </div>
-    <div class="pagination-item">
-        <a href="#" class="pagination-link"><i class="fas fa-angle-right"></i></a>
-    </div>
+            <a class="pagination-link"
+           asp-page="/Product/Index"
+           asp-route-pageIndex="@(filter.pageIndex + 1)"
+           asp-route-search_name="@filter.search_name">
+                <i class="far fa-angle-right"></i>
+            </a>
+        </div>
 </div>
+}
 <script src="~/js/product_list.js"></script>
+

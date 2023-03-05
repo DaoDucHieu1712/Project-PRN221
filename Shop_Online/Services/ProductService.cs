@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Shop_Online.Models;
 using System.Linq;
+using System.Security.Cryptography;
 
 namespace Shop_Online.Services
 {
@@ -12,45 +13,164 @@ namespace Shop_Online.Services
         {
 
         }
+
         public ProductService(ShopOnlineContext db)
         {
             _db = db;
         }
 
-
         public List<Product> GetProducts()
         {
-            return _db.Products.ToList();
+            List<Product> products;
+            try
+            {
+                products = _db.Products.Include(x =>x.CidNavigation).ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            return products;
         }
 
-        public List<Product> getListProductById(int id)
+        public List<Product> getProductsAndPaging(string search_name, int pageIndex){
+            List<Product> products;
+            int pageSize = 4;
+            try
+            {
+                products = _db.Products
+                    .Include(x => x.CidNavigation)
+                    .Where(x => x.Name.ToUpper().Contains(search_name.ToUpper()))
+                    .Skip((pageIndex - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return products;
+        }
+
+        public int totalProducts()
         {
-            return _db.Products.Where(x => x.Cid == id).ToList();
+            int pageSize = 4;
+            int totalPage = (int)Math.Ceiling(_db.Products.Count() / (double)pageSize);
+            return totalPage;
+        }
+
+
+        public List<Product> getListProductByCId(int cid)
+        {
+            List<Product> products;
+            try
+            {
+                products = _db.Products.Where(x => x.Cid == cid).ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            return products;
         }
 
         public List<Product> getProductsWithHome(int id)
         {
-            return _db.Products.Where(x => x.Cid == id).Take(4).ToList();
+            List<Product> products;
+            try
+            {
+                products = _db.Products.Where(x => x.Cid == id).Take(4).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return products;
         }
 
         public Product GetProductById(int id)
         {
-            return _db.Products.Where(x => x.Id == id).FirstOrDefault();
+            Product product;
+            try
+            {
+                product = _db.Products.Where(x => x.Id == id).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            return product;
         }
-        public void create()
+
+        public void create(Product product)
         {
-
+            try
+            {
+                Product _product = GetProductById(product.Id);
+                if (_product == null)
+                {
+                    _db.Products.Add(product);
+                    _db.SaveChanges();
+                }
+                else
+                {
+                   throw new Exception("The product is already exist.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
         }
 
-        public void update()
+        public void update(Product product)
         {
+            try
+            {
+                Product _product = GetProductById(product.Id);
+                if (_product != null)
+                {
+                    _db.Entry<Product>(product).State = EntityState.Modified;
+                    _db.SaveChanges();
+                }
+                else
+                {
+                    throw new Exception("The product does not already exist.");
+                }
+            }
+            catch (Exception ex)
+            {
 
+                throw new Exception(ex.Message);
+            }
         }
 
-        public void delete()
+        public void delete(Product product)
         {
+            try
+            {
+                Product _product = GetProductById(product.Id);
+                if (_product != null)
+                {
+                    _db.Products.Remove(product);
+                    _db.SaveChanges();
+                }
+                else
+                {
+                    throw new Exception("The product does not already exist.");
+                }
+            }
+            catch (Exception ex)
+            {
 
+                throw new Exception(ex.Message);
+            }
         }
 
+       
     }
 }

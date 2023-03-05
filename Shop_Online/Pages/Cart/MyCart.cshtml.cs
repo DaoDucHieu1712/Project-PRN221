@@ -9,6 +9,7 @@ namespace Shop_Online.Pages.Cart
     public class MyCartModel : PageModel
     {
         public ProductService productService = new ProductService();
+
         public IDictionary<int, int> cart { get; set; }
         public int total_Price { get; set; }
 

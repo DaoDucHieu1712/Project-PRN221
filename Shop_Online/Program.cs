@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Shop_Online.Models;
 using Shop_Online.Services;
 
@@ -5,7 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSingleton<ShopOnlineContext>();
+builder.Services.AddDbContext<ShopOnlineContext>(option =>
+{
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(60);
@@ -21,10 +25,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
 var services = new ServiceCollection();
 services.AddSingleton<ProductService>();
-
 
 app.UseStaticFiles();
 app.UseHttpsRedirection();
