@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Shop_Online
 build_property.RootNamespace = Shop_Online
-build_property.ProjectDir = C:\Users\ADMIN\OneDrive\Desktop\FPT\Spring2023\PRN221\Project\Project-PRN221\Shop_Online\
+build_property.ProjectDir = c:\Users\ADMIN\OneDrive\Desktop\FPT\Spring2023\PRN221\Project\Project-PRN221\Shop_Online\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ADMIN\OneDrive\Desktop\FPT\Spring2023\PRN221\Project\Project-PRN221\Shop_Online
+build_property.MSBuildProjectDirectory = c:\Users\ADMIN\OneDrive\Desktop\FPT\Spring2023\PRN221\Project\Project-PRN221\Shop_Online
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Cart/AddToCartAsync.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Cart/AddToCartAsync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxBZGRUb0NhcnRBc3luYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Cart/MyCart.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Cart/MyCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxNeUNhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Error.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Home/Store.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Home/Store.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxTdG9yZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Index.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Order/Index.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Privacy.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/Create.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/Delete.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/Index.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/ListAjax.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/ListAjax.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxMaXN0QWpheC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/Update.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Register.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Shared/_LayoutDashboard.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Shared/_LayoutDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXREYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/SignIn.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbkluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/User/Index.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/_ViewImports.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/_ViewStart.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Shared/_Layout.cshtml]
+[c:/Users/ADMIN/OneDrive/Desktop/FPT/Spring2023/PRN221/Project/Project-PRN221/Shop_Online/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f1ban6obaj

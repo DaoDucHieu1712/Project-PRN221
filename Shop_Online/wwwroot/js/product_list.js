@@ -31,10 +31,11 @@ btn_create.addEventListener("click", () => {
 
 //UPDATE
 btn_update.forEach((item) =>
-    item.addEventListener("click", () => {
+    item.addEventListener("click", (e) => {
         console.log("update");
+        const value = e.target.dataset.valueId;
         let template = get_template(
-            "/Product/Update",
+            `/Product/Update?id=${value}`,
             "get"
         ).then((res) => {
             insert_template(res);
@@ -44,10 +45,11 @@ btn_update.forEach((item) =>
 
 //DELETE
 btn_delete.forEach((item) =>
-    item.addEventListener("click", () => {
+    item.addEventListener("click", (e) => {
+        const value = e.target.dataset.valueId;
         console.log("delte");
         let template = get_template(
-            "/Product/Delete",
+            `/Product/Delete?id=${value}`,
             "get"
         ).then((res) => {
             insert_template(res);

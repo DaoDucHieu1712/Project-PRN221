@@ -10,10 +10,10 @@
             X
         </span>
         <div class="modal-main">
-            <h1 class="form-heading" style="font-size: 18px;">Do you want to delete product !!</h1>
+            <h1 class="form-heading" style="font-size: 18px;">Do you want to delete <span style="color: tomato">@Model.name_product</span> !!</h1>
             <div class="form-confirm">
                 <span class="form-no close-delete">No</span>
-                <a class="form-yes">Yes</a>
+                <a class="form-yes" href="/Product/Delete?id=@Model.Product.Id&handler=Confirm">Yes</a>
             </div>
         </div>
     </div>

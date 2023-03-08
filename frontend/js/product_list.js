@@ -19,8 +19,9 @@ function get_template(url, method) {
 }
 
 //CREATE
-btn_create.addEventListener("click", () => {
+btn_create.addEventListener("click", (e) => {
   console.log("create");
+
   let template = get_template(
     "http://127.0.0.1:5500/Frontend/product_create.html",
     "get"
@@ -31,7 +32,9 @@ btn_create.addEventListener("click", () => {
 
 //UPDATE
 btn_update.forEach((item) =>
-  item.addEventListener("click", () => {
+  item.addEventListener("click", (e) => {
+    const value = e.target.dataset.valueId;
+    console.log(value);
     console.log("update");
     let template = get_template(
       "http://127.0.0.1:5500/Frontend/product_update.html",

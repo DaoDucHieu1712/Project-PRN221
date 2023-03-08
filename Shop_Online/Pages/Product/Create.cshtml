@@ -11,29 +11,30 @@
         </span>
         <div class="modal-main">
             <h1 class="form-heading">Add new product</h1>
-            <form action="#" class="form-submit">
+            <form method="Post" asp-page="Create" class="form-submit">
                 <div class="form-group">
                     <label>Name</label>
-                    <input type="text">
+                    <input type="text" name="Product.Name">
                 </div>
                 <div class="form-group">
                     <label>Image</label>
-                    <input type="text">
+                    <input type="text" name="Product.Image">
                 </div>
                 <div class="form-group">
                     <label>Desciption</label>
-                    <input type="text">
+                    <input type="text" name="Product.Desc">
                 </div>
                 <div class="form-group">
                     <label>Price</label>
-                    <input type="number" min="0">
+                    <input type="number" min="0" name="Product.Price">
                 </div>
                 <div class="form-group">
                     <label>Category</label>
-                    <select name="" id="">
-                        <option value="">ABC</option>
-                        <option value="">XYZ</option>
-                        <option value="">QWER</option>
+                    <select name="Product.Cid">
+                        @foreach (var item in Model.categories)
+                        {
+                        <option value="@item.Id">@item.Name</option>
+                        }
                     </select>
                 </div>
                 <div class="form-group">

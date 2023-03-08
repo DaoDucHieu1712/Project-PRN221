@@ -19,7 +19,6 @@ namespace Shop_Online.Pages.Product
             {
                total_page = productService.totalProducts();
                filtersp.pageIndex =  filtersp.pageIndex <= 0 ? 1 : filtersp.pageIndex;
-               filtersp.pageIndex = filtersp.pageIndex > total_page ? total_page : filtersp.pageIndex;
                filtersp.search_name = filtersp.search_name ?? "";
                products = productService.getProductsAndPaging(filtersp.search_name,filtersp.pageIndex);
                filter = filtersp;
@@ -29,7 +28,7 @@ namespace Shop_Online.Pages.Product
         public class filterProducts
         {
             public int pageIndex { get; set; } = 1;
-            public string? search_name { get;set; }
+            public string? search_name { get; set; } = default;
         }
     }
 }

@@ -42,6 +42,7 @@ namespace Shop_Online.Services
                 products = _db.Products
                     .Include(x => x.CidNavigation)
                     .Where(x => x.Name.ToUpper().Contains(search_name.ToUpper()))
+                    .OrderByDescending(x => x.Id)
                     .Skip((pageIndex - 1) * pageSize)
                     .Take(pageSize)
                     .ToList();
@@ -131,16 +132,8 @@ namespace Shop_Online.Services
         {
             try
             {
-                Product _product = GetProductById(product.Id);
-                if (_product != null)
-                {
                     _db.Entry<Product>(product).State = EntityState.Modified;
                     _db.SaveChanges();
-                }
-                else
-                {
-                    throw new Exception("The product does not already exist.");
-                }
             }
             catch (Exception ex)
             {
@@ -153,16 +146,8 @@ namespace Shop_Online.Services
         {
             try
             {
-                Product _product = GetProductById(product.Id);
-                if (_product != null)
-                {
                     _db.Products.Remove(product);
                     _db.SaveChanges();
-                }
-                else
-                {
-                    throw new Exception("The product does not already exist.");
-                }
             }
             catch (Exception ex)
             {
